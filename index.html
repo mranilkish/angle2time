@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <!--  <script src="babel.min.js"></script>-->
+    <script src="./d3.min.js"></script>
+    <script src="d3-radial-axis.min.js"></script>
+
+    <link rel="stylesheet" href="timestyle.css">
+</head>
+
+<body>
+
+  <br>
+
+<table  border="1"> <tr><td>
+  <input  type="button" onClick="f();" id='bb' value ="start"><br>
+  start time:<input size="2" type="text" id="hr" value='0'>
+  <input type="text"  size="2"  id="mn" value='0'>
+    <input type="text" id="sc"  size="2"  value='0'>
+    <br>  stop time:<input type="text" id="hr1" value='24'  size="2" >
+        <input type="text" id="mn1" value='0'  size="2" >
+          <input type="text" id="sc1" value='0'  size="2" >
+          <br>Angle:<input  type="text" id="Agl" value='90' size='4'><br>
+            break:<input  type="button" onClick="gg();" id='dd' value ="break"><br>
+            continue:<input  type="button" onClick="fram();" id='daa' value ="continue"><br>
+            speed rank <input  type="text" id="sup" value='1' size='4'>
+
+  </td><td> <svg id="canvas"></svg> </td></tr>
+  <tr><td>
+      <p id='ss'>Result:<BR></p>
+    </td>  <td>Angle:<p id="ang"></p></td></tr>
+    Mode: <input  type="button" onClick="ns();" id='da' value ="nonstop mode">
+</table>
+    <script type="text/javascript" src="time.js"></script>
+
+    <b id='bi'></b>
+
+</body>
